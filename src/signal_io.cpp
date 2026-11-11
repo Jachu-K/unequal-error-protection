@@ -1,4 +1,7 @@
 #include "signal_io.hpp"
+#include <cmath>
+#include <numbers>
+#include <stdexcept>
 
 std::vector<uint8_t> generateSine(int n, double period) {
     if (n < 0) throw std::invalid_argument("generateSine: n < 0");

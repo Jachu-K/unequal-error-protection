@@ -1,4 +1,5 @@
 #include "channel.hpp"
+#include <stdexcept>
 
 Channel::Channel(double p, std::mt19937 rng) : p_(p), rng_(rng) {
     if (!(p>=0.0 && p<=0.5)) {

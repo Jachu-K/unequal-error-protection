@@ -1,4 +1,5 @@
 #include <doctest/doctest.h>
+#include <stdexcept>
 #include "channel.hpp"
 #include "random.hpp"
 
