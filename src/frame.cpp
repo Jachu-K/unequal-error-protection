@@ -13,25 +13,8 @@ splitFrame(const std::vector<bool>& frame, Strategy s) {
     const auto a_bits = fromBits(a);
     const auto b_bits = fromBits(b);
 
-    switch (s.a) {
-    case Code::Hamming:
-        a = hammingEncode(a_bits);
-        break;
-    case Code::Rep3:
-    	a = rep3Encode(a_bits);
-    	break;
-	default: ;
-    }
-
-	switch (s.b) {
-	case Code::Hamming:
-		b = hammingEncode(b_bits);
-		break;
-	case Code::Rep3:
-		b = rep3Encode(b_bits);
-		break;
-	default: ;
-	}
+	a = encode(s.a, a_bits);
+	b = encode(s.b, b_bits);
 
     return std::make_pair(a, b);
 }
