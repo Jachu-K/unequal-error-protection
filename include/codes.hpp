@@ -1,6 +1,9 @@
 #pragma once
 #include <cstdint>
 #include <vector>
+#include "bits.hpp"
+#include "hamming.hpp"
+#include "repetition.hpp"
 #include "types.hpp"
 
 int length(Code c);
