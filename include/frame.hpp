@@ -1,6 +1,7 @@
 #pragma once
 #include <utility>
 #include <vector>
+#include "codes.hpp"
 #include "types.hpp"
 
 std::vector<bool> buildFrame(const std::vector<bool>& a, const std::vector<bool>& b);
